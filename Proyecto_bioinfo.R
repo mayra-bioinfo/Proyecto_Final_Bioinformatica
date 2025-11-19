@@ -35,7 +35,7 @@ if (t <= 5){
 
 print(paste("La probabilidad de contaminacion es:", prob))
 
-#############################################################################
+###################################################################################
 
 if (any (temperatura > 34)) {
   print ("la temperatura es un riesgo para el crecimiento bacteriano, podemos ponerlo en refrigeracion")
