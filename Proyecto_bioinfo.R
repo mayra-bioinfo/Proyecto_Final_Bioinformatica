@@ -10,6 +10,9 @@ manipulacion <- c("si", "si", "no", "si", "si", "no", "si", "si", "si")
 estacion_año <- c()
 
 
+if (any (temperatura > 34)) {
+  print ("la temperatura es un riesgo para el crecimiento bacteriano, podemos ponerlo en refrigeracion")
+}
 
 
 
