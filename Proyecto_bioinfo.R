@@ -18,19 +18,17 @@ manipulacion <- c("si", "si", "no", "si", "si", "no", "si", "si", "si")
 estacion_año <- c("Verano", "Primavera", "Invierno", "Otoño")
 
 ### Seleccion de los alimentos ###
+t <- as.numeric(readline (prompt = "introduce la temperatura a la que se encuentra el alimento: "))
 
-for (t in temperatura) {
-  if (t <= 5){
+if (t <= 5){
     prob <- 0.05 # Baja probabilidad (refrigeracion)  
-  }
-  else if (t <= 20){
+  } else if (t >= 6 & t <= 20 ){
     prob <- 0.30 #Moderado 
-  }
-  else if (t <= 35){
+  } else if (t >= 21 & t <= 35){
     prob <- 0.70
-  }
-  else {
+  }else {
     prob <- 0.90 # Muy alta 
   }
-}
+
+print(paste("La probabilidad de contaminacion es:", prob))
 
